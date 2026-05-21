@@ -143,9 +143,9 @@ Pre-generated splits are included under `data/splits/`:
 
 ---
 
-## Pretrained Checkpoints
+## Checkpoints
 
-Download the pretrained checkpoints from [HuggingFace](https://huggingface.co/lily-goli/recuriosity):
+Download the weights from [HuggingFace](https://huggingface.co/lily-goli/recuriosity):
 
 | File | Description |
 |------|-------------|
