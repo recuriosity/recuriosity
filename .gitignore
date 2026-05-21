@@ -1,0 +1,27 @@
+# Internal — not for public release
+Makefile.cluster
+Makefile
+Dockerfile
+
+# Un-ignore data/ (overrides parent .gitignore which ignores data/)
+!data/
+!data/**
+
+# Runtime outputs
+runs/
+checkpoints/
+checkpoints_saved/
+eval_outputs/
+train_videos/
+train_videos_sliding/
+eval_videos_sliding/
+__pycache__/
+*.pyc
+*.pyo
+.env
+wandb/
+
+# Habitat-sim data cache
+
+# Habitat-sim GLB rewrite cache (eval-hole-fix)
+*.double_sided.glb

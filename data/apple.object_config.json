@@ -1,0 +1,7 @@
+{
+  "render_asset": "Apple.glb",
+  "collision_asset": "Apple.glb",
+  "mass": 0.02,
+  "join_collision_meshes": true,
+  "use_bounding_box_for_collision": true
+}

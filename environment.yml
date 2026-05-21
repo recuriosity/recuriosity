@@ -1,0 +1,26 @@
+name: recuriosity
+channels:
+  - "nvidia/label/cuda-12.4.0"
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - cmake
+  # CUDA 12.4 toolkit from the nvidia channel. Provides nvcc, static libs,
+  # and headers needed to build fused-ssim, gsplat, and habitat-sim from source.
+  # The nvidia channel avoids the conda-forge sysroot header conflict on Ubuntu 22.04+.
+  - cuda=12.4.0
+  - cuda-nvcc
+  - cuda-cudart-dev
+  - cuda-cccl
+
+# After activating this environment follow the steps in README.md Option B:
+#   2. pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 \
+#          --extra-index-url https://download.pytorch.org/whl/cu124
+#   3. CUDA_HOME=$CONDA_PREFIX CUDA_ARCHITECTURES="75;80;89;90" \
+#      pip install --no-build-isolation "git+https://github.com/rahul-goel/fused-ssim"
+#   4. CUDA_HOME=$CONDA_PREFIX TORCH_CUDA_ARCH_LIST="7.5;8.0;8.9;9.0" MAX_JOBS=$(nproc) \
+#      pip install --no-build-isolation -r requirements.txt
+#   5. Build habitat-sim from source (see README for the exact command)
