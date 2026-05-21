@@ -145,9 +145,15 @@ Pre-generated splits are included under `data/splits/`:
 
 ## Pretrained Checkpoints
 
-> **TODO**: Add download link for the pretrained exploration checkpoint.
+Download the pretrained checkpoints from [HuggingFace](https://huggingface.co/lily-goli/recuriosity):
 
-Download the checkpoint and pass it to the relevant script via `--checkpoint-path` (eval) or `--base_ckpt` / `--weights_only_ckpt` (fine-tuning). The commands below use `checkpoints/explore.pt` as an example path.
+| File | Description |
+|------|-------------|
+| [`explorer.pt`](https://huggingface.co/lily-goli/recuriosity/resolve/main/explorer.pt) | Main exploration policy, trained on HM3D |
+| [`apple_finetuned.pt`](https://huggingface.co/lily-goli/recuriosity/resolve/main/apple_finetuned.pt) | Apple-picking fine-tune |
+| [`image_goal_finetuned.pt`](https://huggingface.co/lily-goli/recuriosity/resolve/main/image_goal_finetuned.pt) | Image-goal navigation fine-tune |
+
+Pass the checkpoint path via `--checkpoint-path` (eval) or `--base_ckpt` / `--weights_only_ckpt` (fine-tuning). The commands below use `checkpoints/explore.pt` as an example path.
 
 ---
 
