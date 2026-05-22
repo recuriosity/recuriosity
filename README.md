@@ -5,7 +5,7 @@ Official code for:
 > **Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration**  
 > Lily Goli, Justin Kerr, Daniele Reda, Alec Jacobson, Andrea Tagliasacchi, Angjoo Kanazawa  
 > *University of Toronto · UC Berkeley · Wayve · Vector Institute · Simon Fraser University*  
-> [[Project page]](https://recuriosity.github.io) &nbsp;|&nbsp; [[arXiv]](https://arxiv.org/abs/TODO)
+> [[Project page]](https://recuriosity.github.io) &nbsp;|&nbsp; [[arXiv]](https://arxiv.org/abs/2605.22814)
 
 A reinforcement learning agent that learns to explore 3D indoor scenes using only an RGB camera. The agent uses a sliding-window transformer policy (DINO visual encoder + KV-cached transformer backbone) and is trained with PPO, using real-time Gaussian Splatting (GSplat) reconstruction as its intrinsic reward signal.
 
@@ -342,8 +342,8 @@ Code and instructions for running the active mapping baselines (ANS-RGB, ANS-Dep
 @article{goli2026recuriosity,
   title   = {Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration},
   author  = {Goli, Lily and Kerr, Justin and Reda, Daniele and Jacobson, Alec and Tagliasacchi, Andrea and Kanazawa, Angjoo},
-  journal = {arXiv preprint arXiv:TODO},
+  journal = {arXiv preprint arXiv:2605.22814},
   year    = {2026},
-  url     = {https://recuriosity.github.io},
+  url     = {https://arxiv.org/abs/2605.22814},
 }
 ```
